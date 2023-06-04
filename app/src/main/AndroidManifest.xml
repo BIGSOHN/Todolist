@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Todolist"
+        tools:targetApi="31">
+        <activity
+            android:name=".todo.mainfragment.modifyremove.Modi_Remove_Todo5"
+            android:exported="false" />
+        <activity
+            android:name=".todo.mainfragment.modifyremove.Modi_Remove_Todo4"
+            android:exported="false" />
+        <activity
+            android:name=".todo.mainfragment.modifyremove.Modi_Remove_Todo3"
+            android:exported="false" />
+        <activity
+            android:name=".todo.mainfragment.modifyremove.Modi_Remove_Todo2"
+            android:exported="false" />
+        <activity
+            android:name=".todo.mainfragment.modifyremove.Modi_Remove_Todo1"
+            android:exported="false" />
+        <activity
+            android:name=".todo.Todo_Input"
+            android:exported="false" />
+        <activity
+            android:name=".Priority_Select"
+            android:exported="false" />
+        <activity
+            android:name=".category.activity.Modi_Romove"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Join"
+            android:exported="false" />
+        <activity
+            android:name=".category.activity.Spinner"
+            android:exported="true" />
+        <activity
+            android:name=".category.activity.Content_Category"
+            android:exported="true" />
+        <activity
+            android:name=".Category_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".category.activity.Category_Input"
+            android:exported="true" />
+        <activity
+            android:name=".Category_Check"
+            android:exported="false" />
+        <activity
+            android:name=".category.activity.Calender"
+            android:exported="false" />
+        <activity
+            android:name=".category.activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

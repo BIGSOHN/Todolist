@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="125dp"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:text="투 두 잇"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="180dp"
+            android:text="To Do It"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/id_input"
+                android:layout_width="356dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/input_bg"
+                android:hint="아이디"
+                android:paddingLeft="27dp"
+                android:textColorHint="#070707"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/pw_input"
+                android:layout_width="356dp"
+                android:layout_height="62dp"
+                android:background="@drawable/input_bg"
+                android:hint="비밀번호"
+                android:paddingLeft="27dp"
+                android:textColorHint="#070707"
+                android:textSize="18dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/login"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/black_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="로그인"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/arrows" />
+
+            <TextView
+                android:id="@+id/join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="계정이 없으신가요?  가입하기"
+                android:textColor="#9b9b9b"
+                android:textSize="14dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category.Category_Input">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/arrows2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/black_background"
+            android:gravity="center"
+            android:text="category"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/check_category"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/todoit_check" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/first_layout"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <EditText
+
+            android:id="@+id/category_input"
+            android:layout_width="356dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input_bg"
+            android:hint="카테고리 입력"
+            android:paddingLeft="27dp"
+            android:textColorHint="#070707"
+            android:textSize="18dp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

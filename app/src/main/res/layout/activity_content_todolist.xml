@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".todo.Content_Todolist">
+
+    <TextView
+        android:id="@+id/todoInsertDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5월 31일"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/todoInsertText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:hint="할일 입력"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+<!--    <RadioGroup-->
+<!--        android:id="@+id/categoryGroup"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" >-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/cate1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="카1"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/cate2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="카2"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/cate3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="카3"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/cate4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="카4"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/cate5"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="카5"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--    </RadioGroup>-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/todoInsertButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="4"
+        android:text="할일 추가"
+        android:textSize="10sp"
+        android:textColor="@color/black" />
+
+</LinearLayout>
+</layout>
